@@ -19,6 +19,7 @@ beforeAll(async () => {
 });
 
 beforeEach(async () => {
+  console.log('hello')
   const collections = await mongoose.connection.db.collections();
 
   for (let collection of collections) {
